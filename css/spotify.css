@@ -210,6 +210,11 @@
   flex-direction: row;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .lists {
+    margin: 0px 50px;
+  }
+}
 
 .lists p {
   color: #b3b3b3;
