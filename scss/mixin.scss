@@ -1,0 +1,25 @@
+
+@mixin link-style {
+    color: #b3b3b3 !important;
+    text-decoration: none !important;
+    font-size: 0.6em !important;
+}
+
+@mixin play-button {
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin h4 {
+    color:white;
+    margin-left: 80px;
+}
+
+@mixin p {
+    color:  #b3b3b3 !important;
+    font-size: 0.5em;
+}
+
+
+
