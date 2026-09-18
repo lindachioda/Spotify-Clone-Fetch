@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/spotify.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Album Spotify</title>
+</head>
+<body>
+
+<!--COLONNA SINISTRA-->
+<!--nav-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2 bg-black p-3">
+    <nav class="dropdown" id="mainDropdown">
+       <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-dots bi bi-three-dots"></i></button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="index.html"><i class="i-nav bi bi-house-door-fill"></i> Home</a></li>
+              <li><i class="i-input bi bi-search"></i><input type="text" id="searchInput" placeholder="Cosa vuoi cercare?"></li>
+              <li><a class="dropdown-item" href="#"><i class="i-nav bi bi-collection"></i> La tua libreria</a></li>
+          </ul>
+        </nav>
+
+  <div id="secondaryNav" class="text-white">
+    <a href="#" class="dropdown-item d-block"><i class="i-nav bi bi-plus-square"></i> Crea playlist</a>
+    <a href="#" class="dropdown-item d-block"><i class="i-nav bi bi-bookmark-heart"></i> Brani che ti piacciono</a>
+    <a href="#" class="dropdown-item d-block"><i class="i-nav bi bi-music-note-list"></i> Le tue playlist</a>
+  </div>
+
+  <hr>
+<!--playlist-->
+  <div id="playlist">
+          <a href="">This is Lou Reed</a><br>
+          <a href="">All Out 90s 💣</a><br>
+          <a href="">Top 2021</a><br>
+          <a href="">Indiementicabili 🌟</a><br>
+          <a href="">Top Film Tracks</a><br>
+          <a href="">Alternative 10s</a><br>
+          <a href="">Rock Classics 👩‍🎤</a><br>
+          <a href="">Hyperpop</a><br>
+          <a href="">Techno Bunker 📀</a><br>
+          <a href="">Trashpop 🎉 🎊</a><br>
+          <a href="">I miei preferiti (2022)</a><br>
+          <a href="">Canzoni tristi</a><br>
+          <a href="">Lofi Chillpop</a><br>
+          <a href="">Dance 💃🏻🕺🏻</a><br>
+        </div>
+</div>
+
+
+<!--COLONNA CENTRALE-->
+<div class="col-8 col-8-album">
+
+    <header class="header-home" id="bar">
+        <div class="icons-header">
+          <i class="bi bi-arrow-left-circle-fill"></i>
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </div>
+
+<!--dropdown account-->
+        <div class="dropdown">
+           <button class="button-dropdown btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-account" src="img/account-photo.jpg"> Linda Chioda <i class="bi bi-caret-down-fill"></i></button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="#">Account</a></li>
+                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                <li><a class="dropdown-item" href="#">Sessione privata</a></li>
+                <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Esci</a></li>
+              </ul>
+         </div>
+    </header>
+
+<!--main album-->
+<a href="index.html" class="arrow-album-mobile"><i class="bi bi-arrow-left"></i></a>
+
+<nav class="nav-album">
+    <img class="img-album" src="">
+    <div class="nav-group">
+       <p class="card-text-center p-album card-text text-white fw-bold"><small class="text-body-white">ALBUM</small></p>
+       <h1 class="h1-album text-white fw-bold">Demon Days</h1>
+       
+          <div class="h1-a-p">
+            <img class="img-artist" src="">
+            <a href="#" class="card-text artist-album text-white fw-bold">Gorillaz</a><p class="card-text-center card-text text-white">- 2005 • 15 brani, 53 min 20 sec.</p>
+          </div>
+    </div>
+    <div class="mobile-album">
+        <p>Album</p>
+    </div>
+</nav>
+
+<div class="album-content">
+<section class="section-album">
+<div class="box-button-album" id="box-sticky">
+    <button id="btnPlayAlbum" aria-label="Play"><i class="bi bi-play-fill"></i></button>
+    <i class="icon-album bi bi-suit-heart"></i>
+    <i class="icon-album bi bi-arrow-down-circle"></i>
+    <i class="icon-album bi bi-three-dots"></i>
+</div>
+
+<div class="box-button-album-mobile" id="box-sticky">
+  <div>
+    <i class="bi bi-suit-heart"></i>
+    <i class="bi bi-arrow-down-circle"></i>
+    <i class="bi bi-three-dots"></i>
+  </div>
+  <div>
+    <i class="bi bi-shuffle"></i>
+    <button id="btnPlayAlbum" aria-label="Play"><i class="bi bi-play-fill"></i></button>
+  </div>
+
+</div>
+
+<div class="box-title">
+    <p># TITOLO</p>
+    <p>RIPRODUZIONI</p>
+    <i class="bi bi-clock"></i>
+</div>
+<hr class="hr-album">
+
+<div class="lists">
+    <ol class="list-album"></ol>
+
+    <div class="list-riproduzioni"></div>
+
+    <div class="list-time"></div>
+
+</div>
+
+</section>
+</div>
+
+</div>
+
+<!--COLONNA DESTRA-->
+    <div class="col-2 bg-black p-3">
+        <div class="navbar bg-black">
+          <div class="container-fluid">
+            <p class="navbar-brand text-white m-0">Attività amici</p>
+        <div>
+            <i class="i-dx bi bi-person-plus"></i>
+            <i class="i-dx bi bi-x-lg"></i>
+        </div>
+          </div>
+        </div>
+
+    <!--utenti-->
+    <section>
+        <div class="utente">
+            <img src="img/pika.jpg">
+            <div>
+               <a href="" class="name-utente">Pikachu 1 ora</a>
+               <p>Eh Già.. • Vasco Rossi</p>
+               <p>EP III</p>
+            </div>
+        </div>
+
+        <div class="utente">
+            <img src="img/jiggli.jpg">
+            <div>
+               <a href="" class="name-utente"><span>Jigglypuff</span> 4 ore</a>
+               <p>Un Nuovo Bacio • Gigi D'Alessio</p>
+               <p>Il meglio di Gigi D'Alessio</p>
+            </div>
+        </div>
+
+        <div class="utente">
+            <img src="img/mami.jpg">
+            <div>
+               <a href="" class="name-utente">Mia Madre 1 giorno</a>
+               <p>Iron Man Ozzy • Osburn</p>
+               <p>Paranoid</p>
+            </div>
+        </div>
+
+        <div class="utente">
+            <img src="img/skiantos.jpg">
+            <div>
+               <a href="" class="name-utente">Amico 1 giorno</a>
+               <p>Mono Tono • Skiantos</p>
+               <p>Diventa Demente</p>
+            </div>
+        </div>
+
+        <div class="utente">
+            <img src="img/amico1.jpeg">
+            <div>
+               <a href="" class="name-utente">Altro amico online</a>
+               <p>Heartbreaker • Dolly Parton</p>
+               <p>Baby I'm Burnin</p>
+            </div>
+        </div>
+
+    </section>
+
+    </div>
+  
+</div>
+</div>
+
+<!--FOOTER-->
+<footer id="player-footer">
+    <div class="container-flex-footer">
+
+        <div class="container-player-sx">
+            <img class="player-img" src="img/demondays-1.png">
+        <div>
+            <a href="" class="dropdown-item player-title">Demon Days</a>
+            <p class="player-artist">Gorillaz</p>
+        </div>
+
+        <div class="icon-footer-sx"><i class="bi bi-suit-heart"></i></div>
+        </div>
+
+        <div class="container-player-center">
+            <div class="container-center">
+                <i class="bi bi-shuffle"></i>
+                <i class="bi bi-arrow-left-square"></i>
+                <button id="playBtn" aria-label="Play"><i class="bi bi-play-fill"></i></button>
+                <i class="bi bi-arrow-right-square"></i>
+                <i class="bi bi-arrow-repeat"></i>
+            </div>
+         
+            <div class="progress">
+                <p class="time">1:12</p>
+                <input type="range" id="progressBarra" min="0" max="100" value="30">
+                <p class="time">4:29</p>
+            </div>
+        </div>
+
+        <div class="container-player-dx">
+            <i class="bi bi-mic"></i>
+            <i class="bi bi-view-list"></i>
+            <i class="bi bi-speaker"></i>
+            <i class="bi bi-megaphone"></i>
+            <div class="progress-music">
+                 <input type="range" id="progressMusic" min="0" max="240" value="72">
+            </div>
+            <i class="bi bi-arrows-angle-expand"></i>
+        </div>
+
+    </div>
+</footer>
+
+<section class="section-mobile">
+     <div class="container-player-mobile">
+            <img class="player-img-mobile" src="img/demondays-1.png">
+        <div>
+            <a href="" class="dropdown-item player-title-mobile">Demon Days</a>
+            <p class="player-artist-mobile">Gorillaz</p>
+        </div>
+
+        <div class="icon-footer-sx">
+            <i class="bi bi-speaker"></i>
+            <i class="bi bi-suit-heart"></i>
+            <i class=" arrow-footer-mobile bi bi-caret-right-fill"></i>
+        </div>
+        </div>
+</section>
+
+<footer id="footer-mobile">
+  <div class="container-footer-mobile">
+    <a href="index.html">
+    <i class="i-nav bi bi-house-door-fill"></i>
+    </a>
+    <a href="index.html">Home</a>
+  </div>
+  <div class="container-footer-mobile">
+    <a href="#cerca-link">
+       <i class="i-input bi bi-search"></i>
+    </a>
+    <a href="#cerca-link">Cerca</a>
+  </div>
+  <div class="container-footer-mobile">
+    <a href="#album-link">
+        <i class="i-nav bi bi-collection"></i>
+    </a>
+    <a href="#album-link">La tua libreria</a>
+</div>
+</footer>
+    <script src="js/scriptalbum.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
